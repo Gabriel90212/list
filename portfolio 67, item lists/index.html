@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width", intial-scale="1.0"> 
+        <title>Stargraph</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+       <div class="container">
+         <div class="slider">
+            <div class="slides" style="--img: url(img/1.JPG)">
+                <div class="content">
+                    <h2>zMare</h2>
+                    <p> the infinite goes everywhere, where i imagine, i can see in the darkness, whant a magic tent?</p>
+                 </div>
+            </div>
+            <div class="slides" style="--img: url(img/2.jpg)">
+                <div class="content">
+                    <h2>A&R</h2>
+                    <p> I touch the space and it reacted, i imaging things and they became real, i saw the world and it taught me about changes</p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url(img/3.jpg)">
+                <div class="content">
+                    <h2>Inture</h2>
+                    <p>Embedding physic holograms made with laser by ionizing them can attract matter on air so you can sit on an hologram of a chair</p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url(img/4.jpg)">
+                <div class="content">
+                    <h2>Teleportation</h2>
+                    <p>Let quantum entangelment find itself between the connected places, so on connect, winds, and the elements in common so the hiperspace is stablish and go!</p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url(img/5.jpg)">
+                <div class="content">
+                    <h2>Somehow u & i</h2>
+                    <p>As you know im an Technopath Artesan as a fairy from my chemical engineering degree so on and because you being always here with me i want to let you know what we being doing</p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url(img/6.jpg)">
+                <div class="content">
+                    <h2>Singularity</h2>
+                    <p>Everything that there is may have come from momentums where something we all can share is given</p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url(img/7.JPG)">
+                <div class="content">
+                    <h2>Kowhyk Erosions</h2>
+                    <p>Neutrine BLue. Red Nebula. Trail Radioactive. Aura pump. Quo Saturale. Connect Brigth. Purple Shown. Energy Echo. Place Knock. Reach Search. Deep Blue. Star Ligth</p> 
+                </div>
+            </div>
+            <div class="slides" style="--img: url(img/8.jpg)">
+                <div class="content">
+                    <h2>Wourtnenk</h2>
+                    <p>Giften Godes Of Magic</p>
+                </div>
+            </div>
+         </div> 
+         <div class="buttons">
+            <span class="prev"></span>
+            <span class="next"></span>
+         </div>
+       </div>     
+       <script>
+            let next = document.querySelector('.next');
+            let prev = document.querySelector('.prev');
+            let slider = document.querySelector('.slider');
+
+            next.addEventListener('click', function(){
+            let slides = document.querySelectorAll('.slides');    
+            slider.appendChild(slides[0]);
+            })
+
+            prev.addEventListener('click', function(){
+            let slides = document.querySelectorAll('.slides');    
+            slider.prepend(slides[slides.length - 1]);
+            })
+       </script>
+    </body>
+</html>
